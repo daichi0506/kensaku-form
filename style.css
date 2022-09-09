@@ -61,5 +61,10 @@ h1 {
 }
 
 .box2 {
+    margin-bottom: 30px;
     text-align: center;
+}
+
+.box2 a {
+    font-size: 20px;
 }
