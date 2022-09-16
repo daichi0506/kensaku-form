@@ -5,6 +5,7 @@
 
 body {
     font-family: serif;
+    
 }
 
 h1 {
@@ -66,5 +67,36 @@ h1 {
 }
 
 .box2 a {
-    font-size: 20px;
+    font-size: 30px;
+    background-color: #fff462;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 10%;
+    border-radius: 40px;
+    font-family: serif;
+}
+button {
+    font-size: 30px;
+    background-color: #fff462;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 10%;
+    border-radius: 40px;
+    margin-top: 1%;
+}
+@media screen and (max-width:999px) {
+    .box,.box2 {
+        width: 100%;
+        padding: 0;
+    }
+    .btn {
+        margin-bottom: 50px;
+    }
+    p {
+        text-align: left;
+    }
+     
 }
