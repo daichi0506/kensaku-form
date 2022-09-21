@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    margin-right:0px;
+    margin-left:0px;
     padding: 0;
 }
 
@@ -88,6 +90,10 @@ button {
     margin-top: 1%;
 }
 @media screen and (max-width:999px) {
+    h1 {
+        margin: 5% 0 10%;
+    }
+    
     .box,.box2 {
         width: 100%;
         padding: 0;
@@ -96,7 +102,17 @@ button {
         margin-bottom: 50px;
     }
     p {
+        margin: 10px 20px 40px;
         text-align: left;
     }
-     
+    
+    .aa{
+        margin: 10px 20px;
+        padding-top: 40px;
+        font-size: 18px;
+    }
+
+    .box2 a {
+        padding: 0;
+    }
 }
