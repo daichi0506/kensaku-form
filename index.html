@@ -1,44 +1,89 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>検索能力向上委員会</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>検索能力向上委員会</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <header>
     <h1>検索能力向上委員会</h1>
-
-    <div class="box">
-        <p>
-            検索能力の問題の回答用紙は、こちらからダウンロードできます。
-            <br>
-            ※Excelで回答を入力して提出する場合はこちらをクリック
-        </p>
-        <div class="btn">
-            <a class="link1" href="検索能力向上委員会.xlsx" download="検索能力向上委員会.xlsx">
-                回答用紙をダウンロード(Excel入力用)
-            </a>
-        </div>
-        <hr style="margin-bottom: 7%;">
-        <p>
-            パソコンにExcelが入っていない方は、こちらからダウンロード
-            <br>
-            ※①用紙を印刷→②回答を手書き→③写真に撮って提出となります
-        </p>
-        <div class="btn">
-            <a class="link2" href="検索能力向上委員会.pdf" target="_blank" download="検索能力向上委員会.pdf">
-                回答用紙をダウンロード(PDF印刷用)
-            </a>
-        </div>
+    <div class="header__menu">
+      <p class="header__menu--top">
+        <a href="#download">回答用紙をダウンロード</a>
+      </p>
+      <p class="header__menu--bottom">
+        <a href="#form">回答用紙の提出はこちら</a>
+      </p>
     </div>
+  </header>
 
-    <div class="box2">
-        <p style="font-weight: bold; text-align: center;" class="aa">回答が終わりましたら、こちらのフォームから提出をお願いします。</p>
-        <p style="text-align: center;">
-            <button><a href="https://forms.gle/ffHKQbwBcbZosQHf9" target=”_blank”>回答フォームへ</a></button>
+  <main>
+    <section class="download" id="download">
+      <div class="download__heading">
+        <h2>回答用紙をダウンロード</h2>
+        <p>
+          検索能力の問題に使用する回答用紙は、こちらからダウンロードできます。
+          <br>
+          回答用紙は「Excel入力用」「PDF印刷用」の2種類から選べます。
         </p>
-    </div>
+      </div>
+      <div class="download__excel">
+        <div class="download__excel--contents">
+          <div class="inner__excel">
+            <p>
+              Excelで回答を入力して提出する場合は
+              <br>
+              こちらから回答用紙をダウンロード
+            </p>
+            <a class="inner__excel--btn" href="">回答用紙をダウンロード(Excel入力用)</a>
+          </div>
+        </div>
+        <div class="download__excel--icon">
+          <img src="img/excel.png" alt="Excelアイコン">
+        </div>
+      </div>
+      <div class="download__pdf">
+        <div class="download__pdf--contents">
+          <div class="inner__pdf">
+            <p>
+              パソコンにExcelが入っていない方は
+              <br>
+              こちらから回答用紙をダウンロード
+            </p>
+            <a class="inner__pdf--btn" href="">回答用紙をダウンロード(PDF印刷用)</a>
+            <p class="detail__pdf">
+              <a class="detail__pdf--btn" href="">提出方法の詳細はこちら</a>
+            </p>
+          </div>
+        </div>
+        <div class="download__pdf--icon">
+          <img src="img/pdf.png" alt="PDFアイコン">
+        </div>
+      </div>
+    </section>
+    <section class="form" id="form">
+      <div class="form__heading">
+        <h2>回答用紙の提出はこちら</h2>
+        <p>
+          回答用紙の提出は、フォームからの送信になります。
+          <br>
+          こちらの「回答フォームへ」ボタンから、提出をお願いします。
+        </p>
+      </div>
+      <p class="inner__form">
+        <a class="inner__form--link" href="">回答フォームへ</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
