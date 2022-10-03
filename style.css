@@ -313,7 +313,7 @@ main {
     width: 100%;
     font-size: 25px;
   }
-  
+
   .header__menu--top a {
     border-bottom: 5px solid rgba(255, 255, 255, 0.8);
   }
@@ -354,12 +354,12 @@ main {
     height: 400px;
     margin: 100px 0 150px;
   }
-  
+
   .download__excel--contents {
     display: flex;
     width: 100%;
   }
-  
+
   .download__excel--contents p {
     padding: 40px 5%;
     padding-top: 0;
@@ -367,12 +367,12 @@ main {
     line-height: 32px;
     text-align: center;
   }
-  
+
   .inner__excel {
     width: 100%;
     height: 50%;
   }
-  
+
   .inner__excel--btn {
     width: 75%;
     min-width: auto;
@@ -380,7 +380,7 @@ main {
     padding: 20px 25px;
     font-size: 20px;
   }
-  
+
   .inner__excel--btn:hover {
     background-color: #fff;
     color: #050;
@@ -391,10 +391,10 @@ main {
     position: absolute;
     top: 0;
     right: 50%;
-    transform: translate(50%, -40%);
+    transform: translate(50%, -50%);
     width: 50%;
   }
-  
+
   .download__excel--icon img {
     width: 70%;
     min-width: auto;
@@ -404,11 +404,11 @@ main {
     height: 500px;
     margin: 100px 0 150px;
   }
-  
+
   .download__pdf--contents {
     width: 100%;
   }
-  
+
   .download__pdf--contents p {
     padding: 0;
     padding-top: 0;
@@ -416,13 +416,13 @@ main {
     line-height: 32px;
     text-align: center;
   }
-  
+
   .inner__pdf {
     width: 100%;
     min-width: auto;
     height: 60%;
   }
-  
+
   .inner__pdf--btn {
     text-decoration: none;
     width: 75%;
@@ -431,7 +431,7 @@ main {
     padding: 20px 25px;
     font-size: 20px;
   }
-  
+
   .inner__pdf--btn:hover {
     background-color: #fff;
     color: #500;
@@ -444,18 +444,18 @@ main {
     transform: translate(-50%, -50%);
     width: 55%;
   }
-  
+
   .download__pdf--icon img {
     width: 100%;
     min-width: auto;
-  } 
+  }
 
   .detail__pdf {
     width: 70%;
     margin-top: 20px;
     padding: 10px 10%;
   }
-  
+
   .detail__pdf--btn {
     font-size: 18px;
   }
@@ -472,18 +472,31 @@ main {
     line-height: 28px;
     text-align: left;
   }
-  
+
   .inner__form a {
     text-decoration: none;
     padding: 20px 40px;
     border-radius: 10px;
     font-size: 25px;
   }
-  
+
   .inner__form a:hover {
     padding: 20px 40px;
     background-color: rgb(25, 25, 112);
     color: #fff;
     font-size: 25px;
   }
+}
+
+.effect-fade {
+  opacity: 0;
+  transform: translate(0, 100px);
+  /* フェードインで動く高さを指定 */
+  transition: all 2000ms;
+  /* フェードインにかかる時間を指定 */
+}
+
+.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
 }
