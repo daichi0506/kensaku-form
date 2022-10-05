@@ -21,4 +21,16 @@ $(function () {
     });
     jQuery(window).scroll();
   });
+
+
+  if (window.matchMedia('(min-width: 520px)').matches) {
+    mediumZoom(document.querySelectorAll('.sample__container--left > img'), {
+      margin: -320,
+      background: '#292d3d',
+      scrollOffset: 500,
+    });
+  } else {
+    /* スマホでは反応しない */
+  }
+
 });
