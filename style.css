@@ -229,22 +229,88 @@ main {
 }
 
 .detail__pdf {
-  width: 50%;
-  margin-top: 20px;
-  margin-left: auto;
-  padding: 10px 10%;
-  border-bottom: 1px solid #555;
-}
-
-.detail__pdf--btn {
   text-decoration: none;
+  padding-right: 10%;
+  border-bottom: 1px solid #555;
   color: #333;
   font-size: 24px;
-  font-weight: normal;
+  text-align: right;
+  transition: .4;
+}
+
+.detail__pdf:hover {
+  transition: .4;
+  color: rgb(25, 25, 112);
+  cursor: pointer;
 }
 
 .detail__pdf--btn:hover {
   color: rgb(25, 25, 112);
+}
+
+.pdf__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity .3s linear;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+}
+
+.pdf__menu.is-active{
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.pdf__menu--close {
+  transform: translate(-40px, 20px);
+  color: #fff;
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.pdf__menu--close:hover {
+  transition: .4s;
+  color: #ff0;
+}
+
+.pdf__menu--detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.arrow-pc {
+  color: #ff0;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.arrow-sp {
+  display: none;
+}
+
+.step {
+  width: calc(100%/3);
+  text-align: center;
+}
+
+.step p {
+  margin-bottom: 3%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.step img {
+  width: 60%;
 }
 
 .sample {
@@ -508,6 +574,42 @@ main {
 
   .detail__pdf--btn {
     font-size: 18px;
+  }
+
+  .pdf__menu {
+    overflow: auto;
+  }
+
+  .pdf__menu--close {
+    transform: translate(-25px, 10px);
+  }
+  .pdf__menu--detail {
+    flex-direction: column;
+    margin: 10% 0;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .step p {
+    color: #fff;
+  }
+  
+  .step img {
+    width: 70%;
+  }
+
+  .arrow-pc {
+    display: none;
+  }
+
+  .arrow-sp {
+    display: block;
+    margin: 40px 0;
+    color: #ff0;
+    font-size: 50px;
+    font-weight: bold;
   }
 
   .sample {

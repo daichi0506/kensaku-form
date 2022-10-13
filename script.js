@@ -22,7 +22,17 @@ $(function () {
     jQuery(window).scroll();
   });
 
+  // 「提出方法の詳細はこちら」をクリックしたとき
+  $(function(){
+    $('.detail__pdf').on('click', function(){
+      $('.pdf__menu').toggleClass('is-active');
+    });
+    $('.pdf__menu').on('click', function(){
+      $('.pdf__menu').toggleClass('is-active');
+    });
+  }());
 
+  // 回答用紙のサンプルをズーム
   if (window.matchMedia('(min-width: 520px)').matches) {
     mediumZoom(document.querySelectorAll('.sample__container--left > img'), {
       margin: -320,
