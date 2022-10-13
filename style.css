@@ -577,7 +577,7 @@ main {
   }
 
   .pdf__menu {
-    height: 120vh;
+    height: 100%;
     overflow: auto;
   }
 
