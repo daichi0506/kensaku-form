@@ -230,10 +230,14 @@ main {
 
 .detail__pdf {
   text-decoration: none;
+  width: 40%;
+  margin-left: auto;
   padding-right: 10%;
   border-bottom: 1px solid #555;
   color: #333;
   font-size: 24px;
+  font-weight: normal !important;
+  letter-spacing: 3px;
   text-align: right;
   transition: .4;
 }
@@ -310,7 +314,7 @@ main {
 }
 
 .step img {
-  width: 60%;
+  width: 65%;
 }
 
 .sample {
@@ -374,7 +378,7 @@ main {
 }
 
 .form__heading p {
-  margin: 50px 0 10%;
+  margin: 50px 0 5%;
   font-size: 20px;
   line-height: 32px;
 }
@@ -385,7 +389,7 @@ main {
   border-radius: 20px;
   background-color: rgb(25, 25, 112);
   color: #fff;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bold;
   transition: .4s;
 }
@@ -395,7 +399,7 @@ main {
   border: 1px solid rgb(25, 25, 112);
   background-color: #fff;
   color: rgb(25, 25, 112);
-  font-size: 45px;
+  font-size: 35px;
   transition: .4s;
 }
 
@@ -598,7 +602,7 @@ main {
   }
   
   .step img {
-    width: 70%;
+    width: 80%;
   }
 
   .arrow-pc {
