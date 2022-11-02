@@ -22,7 +22,17 @@ $(function () {
     jQuery(window).scroll();
   });
 
-  // 「提出方法の詳細はこちら」をクリックしたとき
+  // 「Googleスプレットシートとは？」をクリックしたとき
+  $(function(){
+    $('.detail__sheet').on('click', function(){
+      $('.sheet__menu').toggleClass('is-active');
+    });
+    $('.sheet__menu').on('click', function(){
+      $('.sheet__menu').toggleClass('is-active');
+    });
+  }());
+
+  // 「詳細はこちら」をクリックしたとき
   $(function(){
     $('.detail__pdf').on('click', function(){
       $('.pdf__menu').toggleClass('is-active');
